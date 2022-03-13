@@ -12,4 +12,7 @@ public interface ConsumeService {
 
     //打印信息
     public void print(String info);
+
+    //master 分支特有
+    public String master();
 }
