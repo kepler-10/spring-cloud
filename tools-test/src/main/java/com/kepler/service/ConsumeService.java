@@ -12,4 +12,7 @@ public interface ConsumeService {
 
     //打印信息
     public void print(String info);
+
+    //branch testing
+    public String testBranch();
 }
