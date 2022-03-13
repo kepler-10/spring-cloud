@@ -10,6 +10,6 @@ public interface ConsumeService {
 
     public String getConsumerName(String ID);
 
-    //打印详细信息
+    //打印信息
     public void print(String info);
 }
