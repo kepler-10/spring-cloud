@@ -10,6 +10,7 @@
   <modules>
     <module>cloud-provider-payment8001</module>
     <module>tools-test</module>
+      <module>cloud-order</module>
   </modules>
   <packaging>pom</packaging>
 

@@ -1,0 +1,15 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: cloud-order
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/db2021?serverTimezone=GMT%2B8&useSSL=true
+    username: root
+    password: 123456
+mybatis:
+  mapper-locations: classpath:/resources/mapper/*.xml
+  type-aliases-package: com.kepler.mapper
