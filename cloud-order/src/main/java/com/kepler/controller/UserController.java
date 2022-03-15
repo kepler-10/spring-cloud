@@ -15,7 +15,7 @@ import java.util.List;
  * @Version 1.0
  */
 
-@Controller
+@RestController
 @RequestMapping("/user")
 @Slf4j
 public class UserController {
@@ -23,15 +23,17 @@ public class UserController {
     UserLoginService userLoginService;
 
     @GetMapping("/getAll")
-    public List<User> lists(){
-        return userLoginService.queryAll();
+    public List<User> lists() {
+        List<User> res = userLoginService.queryAll();
+        return res;
     }
 
 
-    @GetMapping(value = "/info/{name}")
-    public String getUserInfo(@PathVariable("name") String userName){
+    @GetMapping(value = "/info/{name}/{id}")
+    public User getUserInfo(@PathVariable("name") String name, @PathVariable("id")String id){
         log.info("try to get userInfo by userName!");
-        String res =  userLoginService.queryByName(userName).toString();
+        User res =  userLoginService.queryByName(name, id);
+        log.info(res.toString());
         return res;
     }
 }

@@ -17,5 +17,5 @@ public interface UserLoginService {
     public int add(User user);
 
     //根据用户名查询数据
-    public User queryByName(String name);
+    public User queryByName(String name, String id);
 }

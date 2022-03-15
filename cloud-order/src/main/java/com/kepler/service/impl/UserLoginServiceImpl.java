@@ -31,7 +31,7 @@ public class UserLoginServiceImpl implements UserLoginService {
     }
 
     @Override
-    public User queryByName(String name) {
-        return userInfoMapper.queryByName(name);
+    public User queryByName(String name, String id) {
+        return userInfoMapper.queryByName(name, id);
     }
 }

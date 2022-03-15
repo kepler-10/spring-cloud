@@ -20,12 +20,12 @@ public class DepartmentController {
     DepartmentService departmentService;
 
     @GetMapping("/getDepartments")
-    public List<Department> getDepartments(){
+    public List<Department> getDepartments() {
         return departmentService.getDepartments();
     }
 
     @GetMapping(value = "/get/{id}")
-    public Department getDepartmentById(@PathVariable("id") Integer id){
+    public Department getDepartmentById(@PathVariable("id") Integer id) {
         return departmentService.getDepartment(id);
     }
 }

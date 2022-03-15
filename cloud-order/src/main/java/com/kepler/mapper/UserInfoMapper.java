@@ -2,7 +2,9 @@ package com.kepler.mapper;
 
 import com.kepler.dto.User;
 import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
+import org.springframework.web.bind.annotation.PathVariable;
 
 import java.util.List;
 
@@ -22,5 +24,5 @@ public interface UserInfoMapper {
     public int add(User user);
 
     //根据用户名查询数据
-    public User queryByName(String name);
+    public User queryByName(@Param("userName") String name, @Param("userId")String id);
 }
