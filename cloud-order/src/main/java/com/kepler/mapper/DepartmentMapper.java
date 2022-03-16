@@ -1,6 +1,7 @@
 package com.kepler.mapper;
 
 import com.kepler.dto.Department;
+import com.kepler.dto.User;
 import org.apache.ibatis.annotations.Mapper;
 import org.springframework.stereotype.Repository;
 
@@ -18,4 +19,6 @@ public interface DepartmentMapper {
     List<Department> getDepartments();
 
     Department getDepartment(Integer id);
+
+    List<Department> getUserList(Integer i);
 }

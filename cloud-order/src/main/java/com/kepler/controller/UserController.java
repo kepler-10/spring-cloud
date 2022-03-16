@@ -28,6 +28,12 @@ public class UserController {
         return res;
     }
 
+    @PostMapping("/insert")
+    public int insertInfo(@RequestBody User user){
+        log.info("insert student info into tables");
+        int res = userLoginService.add(user);
+        return res;
+    }
 
     @GetMapping(value = "/info/{name}/{id}")
     public User getUserInfo(@PathVariable("name") String name, @PathVariable("id")String id){

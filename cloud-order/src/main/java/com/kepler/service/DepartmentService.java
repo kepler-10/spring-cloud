@@ -1,6 +1,7 @@
 package com.kepler.service;
 
 import com.kepler.dto.Department;
+import com.kepler.dto.User;
 
 import java.util.List;
 
@@ -15,4 +16,6 @@ public interface DepartmentService {
     List<Department> getDepartments();
 
     Department getDepartment(Integer id);
+
+    List<Department> getUserList(Integer id);
 }

@@ -1,6 +1,7 @@
 package com.kepler.service.impl;
 
 import com.kepler.dto.Department;
+import com.kepler.dto.User;
 import com.kepler.mapper.DepartmentMapper;
 import com.kepler.service.DepartmentService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -28,5 +29,10 @@ public class DepartmentImpl implements DepartmentService {
     @Override
     public Department getDepartment(Integer id) {
         return departmentMapper.getDepartment(id);
+    }
+
+    @Override
+    public List<Department> getUserList(Integer id) {
+        return departmentMapper.getUserList(id);
     }
 }
