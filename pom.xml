@@ -11,6 +11,7 @@
     <module>cloud-provider-payment8001</module>
     <module>tools-test</module>
       <module>cloud-order</module>
+      <module>cloud-message</module>
   </modules>
   <packaging>pom</packaging>
 
